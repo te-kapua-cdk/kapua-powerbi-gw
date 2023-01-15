@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Andrew Frazer',
   authorAddress: 'andrew.frazer@raindancers.cloud',
-  cdkVersion: '2.1.0',
+  cdkVersion: '2.60.0',
   defaultReleaseBranch: 'main',
   name: 'kapua-powerbi-gw',
   repositoryUrl: 'https://github.com/andrew.frazer/kapua-powerbi-gw.git',
