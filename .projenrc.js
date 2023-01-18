@@ -5,11 +5,18 @@ const project = new awscdk.AwsCdkConstructLibrary({
   cdkVersion: '2.60.0',
   defaultReleaseBranch: 'main',
   name: 'kapua-powerbi-gw',
-  repositoryUrl: 'https://github.com/andrew.frazer/kapua-powerbi-gw.git',
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  repositoryUrl: 'https://github.com/te-kapua-cdk/kapua-powerbi-gw',
+  description: 'Opinionated Construct to build powerBi Gateway',
+  majorVersion: 1,
+  keywords: [
+    'Microsoft Power BI',
+    'Gateway',
+  ],
+  license: 'Apache-2.0',
+  publishToPypi: {
+    distName: 'kapua-cdk.kapua-powerbi',
+    module: 'PowerBi',
+  },
 });
+
 project.synth();
