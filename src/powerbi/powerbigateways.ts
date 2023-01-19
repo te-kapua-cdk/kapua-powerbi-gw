@@ -136,7 +136,6 @@ export class PowerBiGateways extends constructs.Construct {
     });
 
     // optional time based scaling to reduce min, for workhours
-    //
     if (props.weekdayScaling) {
 
       let morning = 6;
